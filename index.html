@@ -1,0 +1,118 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script defer src="js/lib/fontawesome-all.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>GearPro API</title>
+</head>
+
+<body data-spy="scroll" data-target=".site-nav" data-offset="55">
+
+  <header id="page-hero" class="site-header">
+
+  <nav class="site-nav family-sans text-uppercase navbar navbar-expand-md navbar-dark fixed-top">
+
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#page-hero">
+          GearPro API
+      </a>
+
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myTogglerNav" aria-controls="#myTogglerNav"
+        aria-label="Toggle Navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <section class="collapse navbar-collapse" id="myTogglerNav">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link" href="#page-hero">Login</a>
+          <a class="nav-item nav-link" href="#page-multicolumn">Update</a>
+          <a class="nav-item nav-link" href="#page-media">Doc</a>
+        </div>
+      </section>
+
+    </div>
+  </nav>
+    </header>  
+    
+    <section id="content">
+        <section class="paragraph bg-light">
+   <h3 id="headerH3" class="pt-2">GearPro: Login</h3>
+    <h5>API call:</h5>
+    <p>
+        gearpro.jodymoore.net/ap1/v1/login
+    </p>    
+             <br> 
+    <h5>Parameters:</h5>
+    <b>username, password for related User_ID</b>
+            <br>
+             <br>
+    <h5>Examples of API calls:</h5>
+    <p><a href="http://gearpro.jodymoore.net/ap1/v1/login" target="_blank">gearpro.jodymoore.net/api/v1/login</a></p>
+    <h5>API response:</h5>
+    <pre>{
+        "api_token": "955e465f6827c16bd1a1a9df4b1d26d2", <br>}</pre>
+</section>
+        <section class="paragraph bg-light">
+    <h3  class="pt-2">GearPro: update a pack Job</h3>
+    <h5>API call:</h5>
+    <p>
+        gearpro.jodymoore.net/ap1/v1/update
+    </p>  
+             <br> 
+    <h5>Parameters:</h5>
+    <b>api-token, system_type, rig_ID</b>
+             <br>
+             <br>
+    <h5>Examples of API calls:</h5>
+    <p><a href="http://gearpro.jodymoore.net/ap1/v1/update" target="_blank">gearpro.jodymoore.net/api/v1/update</a></p>
+    <h5>API response:</h5>
+    <pre>{
+        "firstName": "John",
+        "System_Type": "Tandem",
+        "rig_ID": "1" <br>}</pre>
+        </section>
+
+
+</section>
+  <footer class="site-footer text-light d-flex justify-content-center">
+
+    <section class="layout-social py-5">
+
+      <a class="text-light px-2" href="#">
+        <i class="layout-icon fab fa-facebook"></i>
+      </a>
+      <a class="text-light px-2" href="#">
+        <i class="layout-icon fab fa-linkedin"></i>
+      </a>
+    </section>
+
+  </footer>
+
+
+
+  <script src="js/lib/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/lib/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+  <script src="js/lib/popper.min.js"></script>
+  <script src="js/lib/bootstrap.min.js"></script>
+
+  <script>
+    $(function () {
+       $('[data-toggle="popover"]').popover();
+    })
+  </script>
+
+</body>
+
+</html>
+
+
