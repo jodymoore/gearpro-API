@@ -56,10 +56,86 @@
              <br>
     <h5>Examples of API calls:</h5>
     <p><a href="http://gearpro.jodymoore.net/ap1/v1/login" target="_blank">gearpro.jodymoore.net/api/v1/login</a></p>
-    <h5>API response:</h5>
+    <h5>API response:</h5><br>
     <pre>{
         "api_token": "955e465f6827c16bd1a1a9df4b1d26d2", <br>}</pre>
 </section>
+
+          <section class="paragraph bg-light">
+    <h3  class="pt-2">GearPro: Index</h3>
+    <h5>API call:</h5>
+    <p>
+        gearpro.jodymoore.net/ap1/v1/index
+    </p>  
+             <br> 
+    <h5>Parameters:</h5>
+    <b>api_token</b>
+             <br>
+             <br>
+    <h5>Examples of API calls:</h5>
+    <p><a href="http://gearpro.jodymoore.net/ap1/v1/index" target="_blank">gearpro.jodymoore.net/api/v1/index</a></p>
+    <h5>API response:</h5>
+       <br>   <pre>  [
+    [
+        {
+            "System_Type": "Tandem",
+            "rig_ID": 1
+        },
+        {
+            "System_Type": "Tandem",
+            "rig_ID": 2
+        },
+        {
+            "System_Type": "Tandem",
+            "rig_ID": 3
+        },
+        {
+            "System_Type": "Tandem",
+            "rig_ID": 4
+        },
+        {
+            "System_Type": "Tandem",
+            "rig_ID": 5
+        }
+    ],
+    [
+        {
+            "System_Type": "Student",
+            "rig_ID": 1
+        },
+        {
+            "System_Type": "Student",
+            "rig_ID": 2
+        },
+        {
+            "System_Type": "Student",
+            "rig_ID": 3
+        },
+        {
+            "System_Type": "Student",
+            "rig_ID": 4
+        },
+        {
+            "System_Type": "Student",
+            "rig_ID": 5
+        }
+    ],
+    [
+        {
+            "System_Type": "Rental",
+            "rig_ID": 1
+        },
+        {
+            "System_Type": "Rental",
+            "rig_ID": 2
+        }
+    ]
+<br>]</pre>
+        </section>
+
+
+</section>      
+        
         <section class="paragraph bg-light">
     <h3  class="pt-2">GearPro: update a pack Job</h3>
     <h5>API call:</h5>
